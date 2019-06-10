@@ -88,7 +88,9 @@ bool Reader::getToken(StringToken &token)
     {
         ok = false;
     }
-    token.type_ = it->second;
+    if(ok) {
+        token.type_ = it->second;
+    }
 
     if (ok)
     {
