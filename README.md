@@ -15,13 +15,13 @@ newlines within the documents themselves)
 2. For each line, determines whether or not it is a valid JSON document
 3. For each invalid JSON document, determines which of the following reasons cause it to
 be invalid:
-a. Unescaped double quote in string (e.g. “he said “hello””)
-b. String enclosed by single quote instead of double quote (e.g. ‘hello’ instead
+###### a. Unescaped double quote in string (e.g. “he said “hello””)
+###### b. String enclosed by single quote instead of double quote (e.g. ‘hello’ instead
 of “hello”)
-c. Floating point number missing leading zero (e.g. .35 instead of 0.35)
-d. Missing field value (e.g. {“field_name1” : , “field_name2” :
+###### c. Floating point number missing leading zero (e.g. .35 instead of 0.35)
+###### d. Missing field value (e.g. {“field_name1” : , “field_name2” :
 “field_value2”})
-e. Other
+###### e. Other
 4. For input JSON that is invalid for reasons a-d, produces a valid JSON document
 (preserving as much information from the invalid document as possible) and writes this
 to stdout
