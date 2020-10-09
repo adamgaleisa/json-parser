@@ -1,5 +1,5 @@
-# 
-####Technical Exercise for Software Developers
+
+#Technical Exercise for Software Developers
 
 #### to build the project run the following steps:
 #### method 1 run:
